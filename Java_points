@@ -1,0 +1,212 @@
+---------------------------------------------------------------Java points--------------------------------------------------------------------
+package AAThory;
+import java.util.*;
+public class Keypoints {
+	
+	/*shortcuts
+	
+	 * ctrl+shift+r->search any class
+	 * ctrl+shift+h->search anyclass
+	 * ctrl+Alt+h->selecting a method that is used where in the class
+  * ctrl+o=show a method in athat particular class
+	 * ctrl=F->to search in logs and replace new things
+	 * ctrl+m->maximize the code window
+	*ctrl+h ->search any method in a project
+	*ctrl+alt +up arrow or down arrow ->it brings you a duplicate line
+	*ctrl+shift+x->it gives a lines   into uppercase
+	*ctrl+shift+y->it gives a line   into lowercase
+	*select+alt+up arrow->move that line to any where in the class
+	*ctrl+shift+o->it automatically import classes and packages
+	*select+ctrl+/->comment multiline 
+	*ctrl+shift+/->block comment
+	* ctrl+o->outline box
+	* ctrl+alt+H->hierrachy box
+	* ctrl+shift+l->it shows all keyboard shortcut
+	* 
+	*
+	*
+	*
+	
+	
+	*/
+	
+	/*----------------------THREAD CLASS------------------------------------
+	 * There are two ways to create a thread:
+	 * By extending Thread class
+	 * By implementing Runnable interface.
+	 * 
+	 * -----------------array----------------------
+	 * homogenius values are allowed 
+	 * collection of similar data type
+	 * 
+	 * 
+	 * 
+	 * */
+
+	/*interface->set of rules or it is contracte
+	 * interface declared variables are static and final
+	 * multiple interface implement to class
+	 * we cant create instance or object for that ,but we have craete anonyms inner class for that
+	 *  
+	 *
+	 * interface vs inheritence
+	 * -> A class can extend a class and can implement any number of interfaces simultaneously.
+	 *---------------- inhertence-------------------                  
+	 * -> By using �extends� keyword a class can inherit another class, or an interface can inherit other interfaces
+	 * -> It is not compulsory that subclass that extends a superclass override all the methods in a superclass
+	 *  ->Only one superclass can be extended by a class.
+	 *  ->Any number of interfaces can be extended by interface.
+	 *  ->it is used for runtime polymorphism
+->When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+	 *---------------interface-------------------
+	 * ->By using �implements� keyword a class can implement an interface
+	 *-> It is compulsory that class implementing an interface has to implement all the methods of that interface.
+	 * ->A class can implement any number of an interface at a time
+	 * ->An interface can never implement any other interface
+	 * -----method overloading----
+	 * ->If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+	 * ->it achieve compile time polymorphism
+	 * 	static binding used
+	 * ->different obj have diff behaiour
+	 * ----method overriding-------
+	 * In method overriding, methods must have the same name and same signature.
+	 * dynamic binding used->it is a reference of a super class creating object of a sub class
+	 * 
+	 * ----------------------------------------------------
+	 * collection->collection of object and it is a unified architecture ,it is a framework
+	 * ->it contains interfaces and classes and data structure
+	 * ->collection is a grops of object and the object are elements
+	 * ->it has sub interfaces there are set,list and map
+	 * ->it has duplicates or others not also same as ordered
+	 * set->no duplicates allowed, no ordered
+	 * List->insertion order Maintained,duplicates allowed
+	 * ArrayList->it is resizeable,collection of objects
+	 * ->hetrogeneous objects are allowed(different objects)
+	 * we can pass array as a arguments so we can also pass arraylist as a argument
+	 * ->advantage****
+	 * why we go for arraylist?data retrival  is faster in arraylist
+	 * disadvantage****
+	 * element insertion & deletion inm the middle need more shift operations
+	 * ------------------------linkedlist---------------
+	 * Advantages****
+	 * element insertion and deletion is faster
+	 * 
+	 * Disadvantages****
+	 * data retrival is slower
+	 * Array->Java array is an object which contains elements of a similar data type. Additionally, The elements of an array are stored in a contiguous memory location.then it is siziable 
+	 * java.util.Arrays->this also contains static factory
+	 * as we comparing 2 array we use Arrays.equals method
+	 * primitive data type->8 types ,below
+boolean data type
+byte data type
+char data type
+short data type
+int data type
+long data type
+float data type
+double data type
+	 * NON primitive data types->4 types
+arrays
+Strings
+classes
+interfaces
+ we can do typecasting for non primitive datatype (object) creation also
+	 * example:
+	 *  Enginner Hari=new Enginner();
+	 *  IIM student=new IIM(Hari);
+	 *  CivilServices IAS=new CivilServices(student);
+	 * but any connection with those 3 class
+	 * comparator->it is compare anyone object
+	 * object class is base class for all class
+	 *CompareTo->ex:m1.compareTo(m2) 
+	 *->in above case the m1 is less than m2 the result is negative both are equal result is zero then it is more than it is positive number 
+	 * ->what are the details user want that is change in compare method
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * ----------------------
+	 * ----------------access  modifiers------------------
+	 * default->it consider as public,not accessible in other package 
+	 * public->we can use everywhere
+	 * private->only in that package
+	 * protected->only in that package
+	 * *****************************
+	 * Sorted collections don't allow addition of heterogeneous elements as they are not comparable.
+	 * *********************8
+	 * ----------------Map--------------
+	 * it is representing group of object  and key value pair
+	 * ->no duplicates key are allowed
+	 * ->duplicates values are permitted
+	 * ->key value pair  is known as entry
+	 * HashMap->it is the implementation of Map, but it doesn't maintain any order.
+	 *->datastructure using hashtable
+	 *LinkedHashMap->it is the implementation of Map. It inherits HashMap class.
+	 * It maintains insertion order.
+	 * linkedlist+hashtable ->linked hashmap
+	 * ------------identityhashMap-------------
+	 *it uses for comparing two elements it is uses == operator so performance wise it fassts
+	 *string buffer and builder are mutuble in java 
+	 *it adds mutuable object 
+	 * diff between == and equals() method
+	 * performance wise == operator is speed,bcoz equals is a method it contains set of insttructions
+	 * when we use equals () that time we use only immutable object in map
+	 * 
+	 * 
+	 * Treemap-> is the implementation of Map and SortedMap. It maintains ascending order.
+	 * ->sorting based on keys
+	 * ->no hetrogenius values allowed->if we assign hetrogenius objects it will throw class cast exception
+	 * when we use comparator that time keys can be hetrogenius
+	 * A Map doesn't allow duplicate keys, but you can have duplicate values.
+	 * -> HashMap and LinkedHashMap allow null keys and any number of values, but TreeMap doesn't allow any null key or value.
+	 *->remove () in map remove key and reurns that keys value
+	 *in entry()->have getkey and getvalue method are there,that method return type is object,bcoz that is one entry it contains each key and value
+	 *
+	 *-----------------weak hashmap-----------
+	 *garbage collector plays in the weak hash map
+	 *example we take 100 entries so we are defining to NULL to 100 entries so then the garbage collector delete all the 100 entry memories
+	 *only use for memory deleting scenario
+	 ********************SET
+	 *similarly hashset and linkedhashset allow null value and tree set doesnt allow null value
+	 * //tree is ascending whether it is set or map 
+//linkedHash is insertion whether it is set or map
+	 * 
+	 * 
+	 * *****COLLECTION API*********************
+	 * 
+	 * ***************GENERICS******************
+	 * 
+	 * 
+	 * T - Type
+     *K - Key
+     *N - Number
+     *V - Value
+	 * 
+	 * 
+	 * 
+	 * *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 *
+	 */
+
+}
+
+
